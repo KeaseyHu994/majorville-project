@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    article{
+        margin-left: 15%;
+        margin-right: 15%;
+
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        "text img1"
+        "text img2";
+        gap: 15px;
+    }
+
+    .img1{
+        grid-area: img1;
+    }
+
+    .img2{
+        grid-area: img2;
+    }
+
+    .box{
+        grid-area: text;
+        min-width: 300px;
+    }
+
+    @media (width < 700px){
+        article{
+            margin: 0;
+            grid-template-columns: 1fr 5fr 1fr;
+            grid-template-rows: 2fr 360px 360px;
+            grid-template-areas: 
+            ". text ."
+            ". img1 ."
+            ". img2 .";
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Majorville Summer Solstice Logo.png" alt="Majorville Logo" height="100px" width="100px">
+        </div>
+        <div class="title">
+            <h1>Majorville Summer Solstice 2024</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html" class="button">Home</a> <a href="history.html" class="button">History</a> <a href="activities.html" class="button">Activities</a>
+    </nav>
+    
+        <h2>Welcome To Summer Majorville&#39;s Solstice!!!</h2><!-- home page title -->
+
+    <article>
+        <!-- content start -->
+        <div class="box">
+            <h3>Welcome</h3>
+                <p class="content">Gather your family and friends to celebrate the summer solstice for a day of fun at Majorville&#39;s Woodward Farm to celebrate the 150th anniversary of the founding of Majorville! Our theme this year is lumberjacks. Majorville is located on Lake Michigan just south of Esky Road.</p>
+
+        <br class="break">
+
+            <h3>Who, What, When, Where</h3>
+                <p class="content"> Who: Chamber of Commerce in Majorville, Michigan
+                    <br>
+                    What: Summer Solstice Festival
+                    <br>
+                    When: Thursday, June 20, 2024 from 11am-10pm
+                    <br>
+                    Where: Woodward Farm in Majorville, MI</p>
+        </div>
+        <!-- content end -->
+
+        <!-- images -->
+        <div class="img1 image-box">
+            <img src="festival.jpg" alt="Crowd at Festival" class="images">
+                <p> "Future Music Festival 2013" by Eva Rinaldi Celebrity Photographer is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse. </p>
+        </div>
+
+        <div class="images img2 image-box">
+                <img src="majorvile-town.jpg" alt="Majorville" class="images">
+            <div class="cite">
+                <p> "Sala Prabang Hotel, Ounkham Road, Luang Prabang, Laos" by David McKelvey is licensed under CC BY-NC-ND 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=openverse. </p>
+            </div>
+        </div>
+        <!-- end of images -->
+    </article>
+
+    <footer>
+        Majorville Summer Solctice: &copy;CTC 2024
+        <br>
+        <a href="https://openverse.org/search/?q=farm%20summer&license_type=commercial,modification" class="footer-link">https://openverse.org</a>
+    </footer>
+</body>
+</html>

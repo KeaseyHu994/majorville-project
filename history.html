@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    article{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        "text image"
+        ;
+        gap: 10px;
+
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .flipped{
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "image text"
+        ;
+    }
+
+    .box{
+        grid-area: text;
+    }
+
+    .img3{
+        font-size: 0.4rem;
+    }
+
+    .img4{
+        font-size: 0.4rem;
+    }
+
+    @media (width < 700px){
+        .img3{
+            grid-area: img3;
+        }
+
+        .img4{
+            grid-area: img4;
+        }
+
+       article{
+            grid-template-columns: 1fr 5fr 1fr;
+            grid-template-areas: 
+            ". text ."
+            ". img3 .";
+       }
+
+       .flipped{
+            grid-template-columns: 1fr 5fr 1fr;
+            grid-template-areas: 
+            ". text ."
+            ". img4 .";
+       }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Majorville Summer Solstice Logo.png" alt="Majorville Logo" height="100px" width="100px">
+        </div>
+        <div class="title">
+            <h1>Majorville Summer Solstice 2024</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html" class="button">Home</a> <a href="history.html" class="button">History</a> <a href="activities.html" class="button">Activities</a>
+    </nav>
+
+        <h2>History</h2>
+
+<!-- article 1 -->
+    <article>
+        <!-- text start -->
+        <div class="box">
+            <h3>John Major</h3>
+                <p class="content">John Major settled with his wife Julia and daughter Anna in Northern Michigan. He began buying land in Platte and Lake townships as investments and, in late 1854, purchased the 122 acres from Orange and Sally Risdon of Saline, MI. This soon started the origin of this town.</p>
+        </div>
+        <!-- text end -->
+
+        <!-- img start -->
+        <div class="img3 image-box">
+            <img src="lumberjack1.jpg" alt="John Major" class="images">
+            <p> "Going Green." by Tiomax80 is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.</p>
+        </div>
+        <!-- img end -->
+    </article>
+<!-- article 1 end -->
+
+<!-- article 2 -->
+    <article class="flipped">
+        <!-- text start -->
+        <div class="box">
+            <h3>Start of Something New</h3>
+                <p class="content">Lumber speculators soon arrived looking for stands of white pine. Most of the forest in this area was hardwood, but there were some stands of white pine inland from Pine Lake. Lumber speculators were on their way north as the forests near Grand Haven and Muskegon were harvested.</p>
+        </div>
+        <!-- text end -->
+
+        <!-- img start -->
+        <div class="img4 image-box">
+            <img src="logs1.jpg" alt="logs" class="images">
+            <p> "Wood lumber black and white" is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/?ref=openverse.</p>
+        </div>
+        <!-- img end -->
+    </article>
+<!-- arrticle 2 end -->
+
+    <footer>
+        Majorville Summer Solctice: &copy;CTC 2024
+        <br>
+        <a href="https://openverse.org/search/?q=farm%20summer&license_type=commercial,modification" class="footer-link">https://openverse.org</a>
+    </footer>
+</body>
+</html>

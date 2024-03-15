@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body{
+        background: #dcc973;
+    }
+
+    article{
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+        grid-template-areas: 
+        ". text1 text1 text1 ."
+        ". text1 text1 text1 .";
+    }
+
+    .text1{
+        grid-area: text1;
+        padding-bottom: 30px;
+    }
+
+    .grid-2{
+        grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+        grid-template-areas: 
+        "list list . img5 img6"
+        "list list . img7 img8"
+        "list list . . img9"
+        ;
+        gap: 10px;
+
+        background-color: #cacac3;
+    }
+
+    .list{
+        grid-area: list;
+        padding-left: 30px;
+    }
+
+    .break{
+        margin: 20px;
+    }
+
+    .img5{
+        grid-area: img5;
+    }
+
+    .img6{
+        grid-area: img6;
+    }
+
+    .img7{
+        grid-area: img7;
+    }
+
+    .img8{
+        grid-area: img8;
+    }
+
+    .img9{
+        grid-area: img9;
+    }
+
+    .img10{
+        grid-area: img10;
+        margin: 20px;
+    }
+
+    .grid-3{
+        display: grid;
+        grid-template-columns: 10fr 20fr 1fr 10fr;
+        grid-template-areas: 
+        ". text3 img10 ."
+        ;
+    }
+
+    .text3{
+        grid-area: text3;
+        text-align: center;
+        padding-top: 100px;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    @media (width < 700px){
+        article{
+            grid-template-columns: 1fr 5fr 1fr;
+            grid-template-areas: 
+            ". text1 .";
+        }
+
+        .grid-2{
+            grid-template-columns: 1fr 5fr 1fr;
+            grid-template-areas: 
+            ". list ."
+            ". list ."
+            ". list ."
+            ". list ."
+            ". img5 ."
+            ". img6 ."
+            ". img7 ."
+            ". img8 ."
+            ". img9 .";
+        }
+
+        .list{
+            padding: 0px;
+        }
+
+        .grid-3{
+            grid-template-columns: 1fr 5fr 1fr;
+            grid-template-areas: 
+            ". text3 ."
+            ". img10 .";
+        }
+
+        .text3{
+            font-size: 1rem;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Majorville Summer Solstice Logo.png" alt="Majorville Logo" height="100px" width="100px">
+        </div>
+        <div class="title">
+            <h1>Majorville Summer Solstice 2024</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html" class="button">Home</a> <a href="history.html" class="button">History</a> <a href="activities.html" class="button">Activities</a>
+    </nav>
+
+<!-- pt1 -->
+    <article>
+        <div class="text1">
+            <h3>Additional Info.</h3>
+                <p class="content">This is a festival designed to highlight our town and what it has to offer the general public, so costumes are encouraged! Let your kiddos get dressed up as a lumberjack, pioneer, or summer solstice sprite.</p>
+        </div>
+    </article>
+<!-- pt1 end -->
+
+
+
+<!-- pt2 -->
+    <article class="grid-2">
+
+<!-- list of activities -->
+        <div class="list">
+            <h3>Activities</h3>
+                <ul class="content">
+                    <li>Live Music by Breathe Owl Breathe</li>
+                    <li>Wagon Rides</li>
+                    <li>Flower Crown making</li>
+                    <li>Flower press</li>
+                    <li>Food Trucks: Pigs Eatin&#39; Ribs,  Daily Blend, Good on Wheels, TC Pizza Company, and more!</li>
+                    <li>Games </li>
+                    <li>Crafts</li>
+                    <li>Sack Races</li>
+                    <li>Scavenger Hunt</li>
+                    <li>Bonfire with S&#39;mores</li>
+                    <li>U-Pick Strawberries</li>
+                    <li>Children&#39;s and pet&#39;s costume contest</li>
+                    <li>Outdoor yoga</li>
+                    <li>Farm animal petting zoo (goats, sheep, pony, rabbits)</li>
+                    <li>Baseball demonstrations by the Majorville Lumberjacks</li>
+                    <li>Lumberjack Competitions: chopping, sawing, and speed pole climbing</li>
+                    <li>Blacksmithing demonstration by Dan Nickels</li>
+                    <li>Enjoy lemonade , lemonade slushies, ice cream, and other goodies from our local vendors. We will also have food trucks on-site for you to enjoy during our celebration.</li>
+                </ul>
+        </div>
+<!-- list of activities end -->
+
+<!-- image gallery -->
+        <div class="img5 image-box">
+            <img src="band1.jpg" alt="breathe owls breathe" class="images">
+                <p> "Breathe Owl Breathe" by davidburn is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse.</p>
+        </div>
+        
+        <div class="img6 image-box">
+            <img src="crafts1.jpg" alt="wood crafts" class="images">
+                <p> "25th Ickworth Wood & Craft Fair 2014" by Dave Catchpole is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.</p>
+        </div>
+
+        <div class="img7 image-box">
+            <img src="games1.jpg" alt="games" class="images">
+                <p> "Central Virginia Celtic Festival & Highland Games 2014" by Mobilus In Mobili is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.</p>
+        </div>
+
+        <div class="img8 image-box">
+            <img src="yoga1.jpg" alt="yoga" class="images">
+                <p> "Yoga" by Ashlw2 is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse.</p>
+        </div>
+
+        <div class="img9 image-box">
+            <img src="bonfire1.jpg" alt="bonfire" class="images">
+                <p> "Bon Fire & Street Painting 10.18.12" by Southern Arkansas University is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.</p>
+        </div>
+<!-- image gallery end -->
+
+    </article>
+<!-- pt2 end -->
+
+
+
+<!-- pt3 -->
+    <article class="grid-3">
+        <h3 class="text3">The local baseball team, the Majorville Lumberjacks, will host an exhibition game.</h3>
+
+        <div class="img10 image-box">
+            <img src="baseball.jpg" alt="lumberjacks baseball team" class="images">
+                <p> "Midnight amateur baseball in Osaka-Dome 2009" by BOLTandK2 is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse.</p>
+        </div>
+            
+    </article>
+<!-- pt3 end -->
+
+
+    <footer>
+        Majorville Summer Solctice: &copy;CTC 2024
+        <br>
+        <a href="https://openverse.org/search/?q=farm%20summer&license_type=commercial,modification" class="footer-link">https://openverse.org</a>
+    </footer>
+</body>
+</html>
